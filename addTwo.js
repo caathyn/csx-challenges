@@ -1,4 +1,4 @@
-// ADD CODE HERE
+cat // ADD CODE HERE
 function addTwo(num) { // num = 10
   return num + 2
 }
