@@ -3,3 +3,4 @@ function add20 (num){
 }
 
 // CREATE YOUR CONSOLE.LOG BELOW 
+console.log(add20)
