@@ -9,9 +9,9 @@ function isX2(num) {
     return num === x;
 }
 
-const one = isX1(/* ADD CODE HERE */);
-const two = isX2(/* ADD CODE HERE */);
+const one = isX1(5);
+const two = isX2(3);
 
 // Uncomment these to check your work!
-// console.log(one); // should log: true
-// console.log(two); // should log: true
+console.log(one); // should log: true
+console.log(two); // should log: true
