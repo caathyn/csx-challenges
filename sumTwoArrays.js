@@ -1,5 +1,11 @@
 function mergingElements(array1, array2){
   // ADD CODE HERE
+	const total = []
+
+  for (let i = 0; i < array1.length; i++) {
+    total.push(array1[i] + array2[i])
+  }
+  return total
 }
 
 // Uncomment these to check your work!
