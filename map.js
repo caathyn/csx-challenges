@@ -1,4 +1,15 @@
 // ADD CODE HERE
+const subtractTwo = num => {
+  return num - 2;
+}
+
+const map = (array, callback) => {
+  const newArray = [];
+  for (let i = 0; i < array.length; i++) {
+  	newArray.push(callback(array[i]));
+  }
+  return newArray
+}
 
 // Uncomment these to check your work!
 console.log(typeof subtractTwo); // should log: 'function'
