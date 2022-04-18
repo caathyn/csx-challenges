@@ -1,6 +1,6 @@
-function filterArray(array, callback) {
+function filterArray(array, callback) { // array = [1, 2, 3, 4, 5]
   const newArray = [];
-  for (let i = 0; i < array.length; i += 1) {
+  for (let i = 0; i < array.length; i += 1) { // i++
     if (callback(array[i])) newArray.push(array[i]);
   }
   return newArray;
@@ -8,9 +8,11 @@ function filterArray(array, callback) {
 const arrOfNums = [1, 2, 3, 4, 5];
 function func1(num) {
   // ADD CODE HERE
+  return num % 2 === 0
 }
 function func2(num) {
   // ADD CODE HERE
+  return num % 2 !== 0
 }
 
 // Uncomment these to check your work!
