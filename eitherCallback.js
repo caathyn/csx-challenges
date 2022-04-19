@@ -1,5 +1,8 @@
 function eitherCallback(callback1, callback2) {
   // ADD CODE HERE
+  return (element) => {
+    return callback1(element) || callback2(element)
+  }
 }
 
 // Uncomment these to check your work!
