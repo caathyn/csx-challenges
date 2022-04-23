@@ -1,4 +1,7 @@
 // ADD CODE HERE
+function createFunction() {
+  return () => 'hello world'
+}
 
 // Uncomment these to check your work!
 const myFunction = createFunction();
