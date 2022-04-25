@@ -1,15 +1,14 @@
 // ADD CODE HERE
-const after = (num, callback) => {
+const after = (num, callback) => { //num = 3 callback = called function(string) { return('hello ' + string); }
   let count = 0; 
   
-  const innerFunc = (...args) => {
+  return (args) => {
     count++;
-    if (num === count) {
-     return callback(...args)
+    
+    if (num <= count) {
+     return callback(args)
     }
   }
-  
-  return innerFunc;
 }
 
 
