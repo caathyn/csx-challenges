@@ -2,10 +2,10 @@
 const after = (num, callback) => {
   let count = 0; 
   
-  const innerFunc = () => {
+  const innerFunc = (...args) => {
     count++;
     if (num === count) {
-     return callback()
+     return callback(...args)
     }
   }
   
