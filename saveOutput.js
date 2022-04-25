@@ -1,4 +1,18 @@
 // ADD CODE HERE
+const saveOutput = (func, password) => {
+  const newObj = {};
+  
+  const innerFunc = num => {
+    if (num === password) {
+      return newObj;
+    } else {
+      newObj[num] = func(num);
+      return newObj[num];
+    }
+  }
+  return innerFunc;
+}
+
 
 // Uncomment these to check your work!
 const multiplyBy2 = function(num) { return num * 2; };
