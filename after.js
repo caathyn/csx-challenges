@@ -1,4 +1,17 @@
 // ADD CODE HERE
+const after = (num, callback) => {
+  let count = 0; 
+  
+  const innerFunc = () => {
+    count++;
+    if (num === count) {
+     return callback()
+    }
+  }
+  
+  return innerFunc;
+}
+
 
 const called = function(string) { return('hello ' + string); };
 const afterCalled = after(3, called);
