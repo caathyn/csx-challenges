@@ -1,4 +1,10 @@
 // ADD CODE HERE
+const delay = (callback, waitTime) => { // callback = () => count++ ; waitTime = 1000
+  
+  return () => {
+    setTimeout(callback, waitTime) 
+  }
+}
 
 // UNCOMMENT THE CODE BELOW TO TEST DELAY
 let count = 0;
