@@ -1,4 +1,19 @@
 // ADD CODE HERE
+const once = (callback) => {
+  let counter = 0;
+  let output = 0;
+  
+  const innerFunc = (num) => {
+    if (counter === 0) {
+      output = callback(num);
+      counter++; 
+    }
+    
+    return output;
+  }
+  
+  return innerFunc;
+}
 
 const addByTwoOnce = once(function(num) {
   return num + 2;
