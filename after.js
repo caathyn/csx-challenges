@@ -1,5 +1,6 @@
 // ADD CODE HERE
-const after = (num, callback) => { //num = 3 callback = called function(string) { return('hello ' + string); }
+const after = (num, callback) => { 
+ { return('hello ' + string); }
   let count = 0; 
   
   return (args) => {
