@@ -1,5 +1,5 @@
 // ADD CODE HERE
-const delay = (callback, waitTime) => { // callback = () => count++ ; waitTime = 1000
+const delay = (callback, waitTime) => {
   
   return () => {
     setTimeout(callback, waitTime) 
