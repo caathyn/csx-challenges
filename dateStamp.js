@@ -1,4 +1,13 @@
 // ADD CODE HERE
+const dateStamp = (func) => {
+  
+  return (...args) => {
+    const newObj = {};
+    newObj.date = new Date().toDateString();
+    newObj.output = func(...args)
+    return newObj;
+  }
+};
 
 // Uncomment these to check your work!
 const stampedMultBy2 = dateStamp(n => n * 2);
