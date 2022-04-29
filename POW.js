@@ -1,5 +1,9 @@
 function pow(base, exponent) {
-
+	if (exponent === 1) {
+    return base
+  }
+  
+  return base * pow(base, exponent - 1)
 }
 
 // To check if you've completed the challenge, uncomment these console.logs!
