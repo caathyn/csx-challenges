@@ -1,5 +1,9 @@
-function flow(input, funcArray) {
+function flow(input, funcArray) { 
+	if (!funcArray.length) {
+    return input;
+  }
 
+  return flow(funcArray[0](input), funcArray.slice(1)) 
 }
 
 // To check if you've completed the challenge, uncomment this code!
