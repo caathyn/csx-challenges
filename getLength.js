@@ -1,5 +1,7 @@
-function getLength(array) {
+function getLength(array, index = 0) {
+  if (array[index]) return index;
 
+	return getLength(array, index + 1)
 }
 
 // To check if you've completed the challenge, uncomment these console.logs!
