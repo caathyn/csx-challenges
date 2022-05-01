@@ -1,5 +1,10 @@
 function cascade(number) {
 	// Your code here!
+	if (number < 10) return console.log(number);
+
+	console.log(number)
+	cascade(Math.floor(number / 10))
+	console.log(number)
 }
 
 
