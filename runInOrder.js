@@ -1,4 +1,29 @@
-Add code here
+// Add code here
+const runInOrder = (arrFunc, arrNum) => {
+  let time = 0;
+  for (let i = 0; i < arrFunc.length; i++) {
+    time += arrNum[i]
+    setTimeout(arrFunc[i], time)
+  }
+}
 
-/* Uncomment the following line and click 'run' to test your work */
-limitedInterval(() => console.log('repeating'), 100, 550); // should log 'repeating' once per 100 ms, five times.
+// /* Uncomment the following lines and click 'run' to test your work */
+
+function sayHi() {
+  console.log('hi');
+}
+function sayBye() {
+  console.log('bye');
+}
+function sayHowdy() {
+  console.log('howdy');
+}
+
+runInOrder([sayHi, sayBye, sayHowdy], [200, 100, 300]);
+
+/*
+should log:
+'hi' (after 200 ms)
+'bye' (100 ms after 'hi')
+'howdy' (300 ms after 'bye')
+*/
