@@ -1,9 +1,7 @@
 let countDown = 10;
-// // ADD CODE HERE
-for (let i = countDown; i > 0; i--) {
-	countDown--
+for (let i = 0; i < 10; i++) {
+  countDown--;
 }
-  
 
 
 // Uncomment the below line to check your work
