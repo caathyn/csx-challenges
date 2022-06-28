@@ -1,7 +1,5 @@
 const fb = [];
-// ADD CODE HERE
-for (let i = 1; i < 17; i++) {
-
+for (let i = 1; i <= 16; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
     fb.push('fizzbuzz')
   } else if (i % 5 === 0) {
@@ -11,7 +9,6 @@ for (let i = 1; i < 17; i++) {
   } else {
     fb.push(i);
   }
-
 }
 console.log(fb)
 
