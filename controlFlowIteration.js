@@ -2,7 +2,7 @@ const timesTenIfOverFive = [23, 9, 11, 2, 10, 6];
 // ADD CODE HERE
 for (let i = 0; i < timesTenIfOverFive.length; i++) {
   if (timesTenIfOverFive[i] >= 5) {
-      timesTenIfOverFive[i] = timesTenIfOverFive[i] * 10
+      timesTenIfOverFive[i] *= 10
   } 
 }
 
