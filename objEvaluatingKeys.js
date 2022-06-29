@@ -5,13 +5,11 @@ const sumMe = {
   almost: '10',
   done: '!'
 };
-
-let total = 0; // 15
-// ADD CODE HERE
-for (let key in sumMe) {
-  if (typeof(sumMe[key]) === 'number') {
-      total = total + sumMe[key]
+let total = 0;
+for (let item in sumMe) {
+  if(typeof sumMe[item] === 'number') {
+    total += sumMe[item]
   }
 }
-      
+
 console.log(total)
