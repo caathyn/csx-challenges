@@ -6,11 +6,9 @@ const checkObj = {
 };
 
 let found = 0;
-// ADD CODE HERE
-
-for (let pickles in checkObj) {
-  if (pickles === 'foundNum') {
-    found = 1
+for(let item in checkObj) {
+  if(item === "foundNum") {
+    found = 1;
   }
 }
 console.log(found);
