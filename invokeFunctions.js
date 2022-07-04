@@ -19,5 +19,4 @@ function kramer(str) {
 
 // Uncomment these to check your work!
 calls = jerry(calls);
-
 console.log(calls);
