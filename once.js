@@ -1,17 +1,17 @@
 function once(callback) {
-  let flag = false;
-  let result = 0;
+  let count = 0;
+  let result = '';
   
-  function add(input) {
-    if (!flag) {
-    	result = callback(input);
-      flag = true;
+  function output(input) {
+    if (count < 1) {
+      result = callback(input)
+      count++;
     }
     
     return result;
   }
   
-  return add;
+  return output;
 }
 
 const addByTwoOnce = once(function(num) {
