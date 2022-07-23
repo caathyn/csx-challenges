@@ -19,4 +19,4 @@ console.log(getDay()); // should log: 'Fri'
 console.log(getDay()); // should log: 'Sat'
 console.log(getDay()); // should log: 'Sun'
 console.log(getDay()); // should log: 'Fri'
-console.log(getDay()); // should log: 'Fri'
+
