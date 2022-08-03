@@ -1,5 +1,8 @@
 function flow(input, funcArray) {
-  
+  if (funcArray.length === 0) return input;
+
+  const output = funcArray[0](input);
+  return flow(output, funcArray.slice(1));
 }
 
 // To check if you've completed the challenge, uncomment this code!
