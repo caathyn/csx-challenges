@@ -1,10 +1,24 @@
 function hobbyTracker(hobbies) {
+  const cache = {};
   
-  
+  for (let i = 0; i < hobbies.length; i++) {
+    cache[hobbies[i]] = 0;
+  }
+
+  return function(hobby, hours) {
+    if (hobby === undefined) {
+      for (let key in cache) {
+        cache[key] = 0;
+      }
+      
+    	return "tracker has been reset!"
+    }
+    
+    cache[hobby] = cache[hobby] + hours;
+    
+    return cache;
+  }
 }
-
-
-
 
 // Uncomment the code below to check your code:
 const updateHobbies = hobbyTracker(['yoga', 'baking', 'piano']);
