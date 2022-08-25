@@ -1,11 +1,10 @@
-const subtractTwo = number => {
-  return number - 2
-}
+const subtractTwo = number => number - 2
 
 const map = (array, callback) => {
-  let newArray = [];
+  const newArray = [];
+  
   for (let i = 0; i < array.length; i++) {
-    newArray.push(callback(array[i]));
+    newArray.push(callback(array[i]))
   }
   
   return newArray;

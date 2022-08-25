@@ -1,14 +1,13 @@
-function forEach(array, cb) {
+function forEach(array, forCb) {
   for (let i = 0; i < array.length; i++) {
-    cb(array[i]);
+    forCb(array[i])
   }
 }
 
-function map(array, cb) {
-  let newArray = [];
-  forEach(array, function(item) {
-    newArray.push(cb(item));
-  });
+function map(array, mapCb) {
+  const newArray = [];
+  
+  forEach(array, (item) => newArray.push(mapCb(item)))
   
   return newArray;
 }
