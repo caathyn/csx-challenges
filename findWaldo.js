@@ -1,8 +1,12 @@
-const addWaldo = obj => {
-  const name = "Waldo";
-  obj[name] = "unknown";
-  return obj;
+function findWaldo(obj) {
+  if (!obj.hasOwnProperty('Waldo')) {
+    return "Where's Waldo?"
+  }
+  
+  return obj.Waldo
 }
 // Uncomment these to check your work!
-const siliconValley = {'Richard': 'Hendricks', 'Erlich': 'Bachman', 'Bertram': 'Gilfoyle'}
-console.log(addWaldo(siliconValley)) // should log:{ Richard: 'Hendricks', Erlich: 'Bachman', Bertram: 'Gilfoyle', Waldo: 'unknown' }
+const DC = {'Bruce': 'Wayne', 'Harley': 'Quinn'}
+const supernatural = {'Sam': 'Winchester', 'Dean': 'Winchester', 'Waldo': undefined}
+console.log(findWaldo(DC)) // should log: 'Where's Waldo?'
+console.log(findWaldo(supernatural)) // should log: 'unknown'
