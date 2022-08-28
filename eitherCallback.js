@@ -1,6 +1,6 @@
 function eitherCallback(callback1, callback2) {
-  return (element, i, array) => {
-    return callback1(element, i, array) || callback2(element, i, array);
+  return (...arg) => {
+    return callback1(...arg) || callback2(...arg)
   }
 }
 
