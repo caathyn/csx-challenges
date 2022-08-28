@@ -1,12 +1,11 @@
 function arrToObj(array, callback) {
-  let emptyObj = {};
-  for (let i = 0; i < array.length; i++) {
-    if (callback(array[i])) {
-      emptyObj[array[i]] = callback(array[i]);
-    }
-  }
+  const obj = {}; 
   
-  return emptyObj;
+  array.forEach((element) => {
+    obj[element] = callback(element)
+  })
+  
+  return obj;
 }
 
 // Uncomment these to check your work!
