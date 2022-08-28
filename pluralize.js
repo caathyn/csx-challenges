@@ -1,5 +1,5 @@
 const pluralize = array => {
-	return array.map(item => item + 's')
+	return array.map(item => { return item + 's' })
 } 
 
 // Uncomment these to check your work!

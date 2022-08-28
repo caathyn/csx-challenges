@@ -1,14 +1,12 @@
-function union(array) {
-  let result = [];
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array[i].length; j++) {
-      if (!result.includes(array[i][j])) {
-        result.push(array[i][j])
+function union(arrayOfArrays) {
+  return arrayOfArrays.reduce((acc, curr) => {
+    curr.forEach((item) => {
+      if (!acc.includes(item)) {
+        acc.push(item)
       }
-    }
-  }
-  
-  return result;
+    })
+    return acc;
+  })
 }
 
 // Uncomment these to check your work!
