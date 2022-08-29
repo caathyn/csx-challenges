@@ -1,10 +1,4 @@
-const createFunction = () => {
-  const print = () => {
-    return 'hello world'
-  }
-  
-  return print
- }
+const createFunction = () => () => { return 'hello world'}
 
 
 
