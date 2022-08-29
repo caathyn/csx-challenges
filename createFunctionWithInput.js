@@ -1,10 +1,4 @@
-const createFunctionWithInput = input => {
-  const print = () => {
-    return input;
-  }
-
-  return print;
-}
+const createFunctionWithInput = input => () => { return input }
 
 // UNCOMMENT THESE TO TEST YOUR WORK!
 const sampleFunc = createFunctionWithInput('sample');
