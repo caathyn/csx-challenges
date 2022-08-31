@@ -1,9 +1,7 @@
 const addByX = input => {
-  const add = num => {
-    return input + num;
+  return (x) => {
+    return input + x;
   }
-  
-  return add;
 }
 
 const addByTwo = addByX(2);
