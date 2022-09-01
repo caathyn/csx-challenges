@@ -2,16 +2,14 @@ function once(callback) {
   let count = 0;
   let result = '';
   
-  function output(input) {
+  return (input) => {
     if (count < 1) {
-      result = callback(input)
+      result = callback(input);
       count++;
     }
     
     return result;
   }
-  
-  return output;
 }
 
 const addByTwoOnce = once(function(num) {
