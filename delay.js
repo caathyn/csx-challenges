@@ -1,10 +1,4 @@
-function delay(callback, waitTime) {
-  function delayTime() {
-    return setTimeout(callback, waitTime)
-  }
-  
-  return delayTime;
-}
+const delay = (callback, waitTime) => () => setTimeout(callback, waitTime)
 
 // UNCOMMENT THE CODE BELOW TO TEST DELAY
 let count = 0;
