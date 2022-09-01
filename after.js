@@ -2,7 +2,7 @@ function after(numOfTimes, callback) {
   let timesCalled = 0;
   
   return (...arg) => {
-    count++;
+    timesCalled++;
     if (timesCalled >= numOfTimes) {
       return callback(...arg)
     }
