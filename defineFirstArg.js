@@ -1,9 +1,7 @@
-function defineFirstArg(func, arg1) {
-  function innerFunc(...arg2) {
-    return func(arg1, ...arg2)
+function defineFirstArg(func, argument) {
+  return (...arg) => {
+    return func(argument, ...arg)
   }
-  
-  return innerFunc;
 }
 
 // Uncomment these to check your work!
