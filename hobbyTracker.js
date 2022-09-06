@@ -1,9 +1,9 @@
 function hobbyTracker(hobbies) {
   const cache = {};
   
-  for (let i = 0; i < hobbies.length; i++) {
-    cache[hobbies[i]] = 0;
-  }
+  hobbies.forEach(hobby => {
+    cache[hobby] = 0;
+  })
 
   return function(hobby, hours) {
     if (hobby === undefined) {
@@ -14,7 +14,7 @@ function hobbyTracker(hobbies) {
     	return "tracker has been reset!"
     }
     
-    cache[hobby] = cache[hobby] + hours;
+    cache[hobby] += hours;
     
     return cache;
   }

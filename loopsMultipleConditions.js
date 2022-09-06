@@ -4,19 +4,22 @@ function addingAllTheWeirdStuff(array1, array2){
   let greaterThan20 = false;
 
   for (let i = 0; i < array2.length; i++) {
+    // determine whether elements in array2 are even or odd
     if (array2[i] % 2 === 0) {
+      // if even(odd), add all the sum of even(odd) numbers
       even += array2[i]
     } else {
       odd += array2[i]
     }
     
+    // if any element in array2 is greater than 20, reassign greaterThan20 to true;
     if (array2[i] > 20) { 
       greaterThan20 = true;
     }
   }
  
   for (let i = 0; i < array1.length; i++) {
-    if (greaterThan20) { 
+    if (greaterThan20) { // if true, add 1 to every element in array1
       array1[i] += 1 
      }
     if (array1[i] < 10) {
