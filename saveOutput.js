@@ -1,14 +1,14 @@
 const saveOutput = (func, string) => {
-  let obj = {};
-  const password = (input) => {
-    if (input === string) {
+  const obj = {};
+
+  return (password) => {
+    if (password === string) {
       return obj;
     } else {
-      return obj[input] = func(input)
+      obj[password] = func(password);
     }
+    return func(password);
   }
-  
-  return password;
 }
 
 // Uncomment these to check your work!
