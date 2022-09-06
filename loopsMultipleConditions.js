@@ -15,19 +15,18 @@ function addingAllTheWeirdStuff(array1, array2){
     }
   }
  
-  const newArray = []; 
   for (let i = 0; i < array1.length; i++) {
     if (greaterThan20) { 
       array1[i] += 1 
      }
     if (array1[i] < 10) {
-    	newArray.push(array1[i] + odd)
+    	array1[i] += odd;
     } else if (array1[i] > 10) {
-      newArray.push(array1[i] + even)
+      array1[i] += even;
     }
   }
   
-  return newArray;
+  return array1;
 }
 
 // Uncomment these to check your work!
