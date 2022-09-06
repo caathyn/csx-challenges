@@ -1,15 +1,13 @@
 const cycleIterator = array => {
-  let index = 0;
-  const week = () => {
-    let i = index++;
-    if (index >= array.length) { 
-      index = 0;
+  let i = 0;
+
+  return () => {
+    if (i >= array.length) {
+      i = 0; 
     }
-    
-    return array[i]
+
+    return array[i++];
   }
-  
-  return week;
 }
 
 // Uncomment these to check your work!
