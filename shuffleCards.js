@@ -1,5 +1,13 @@
-function shuffleCards(topHalf, bottomHalf) {
-  // YOUR CODE HERE
+function shuffleCards(topHalf, bottomHalf, shuffled = []) {
+  if (topHalf.length === 0 && bottomHalf.length === 0) return shuffled;
+  if (topHalf.length !== 0) {
+    shuffled.push(topHalf[0]);
+  }
+  if (bottomHalf.length !== 0) {
+    shuffled.push(bottomHalf[0]);
+  }
+  
+  return shuffleCards(topHalf.slice(1), bottomHalf.slice(1), shuffled);
 }
 
 
