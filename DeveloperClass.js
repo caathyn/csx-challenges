@@ -13,7 +13,7 @@ class DeveloperClass extends PersonClass {
     super(name)
     this.age = age;
   }
-  
+
   introduce() {
     console.log(`Hello World, my name is ${this.name}`)
   }
