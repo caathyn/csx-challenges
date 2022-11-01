@@ -1,5 +1,6 @@
 function arrayBuilder(obj) {
   const outputArray = [];
+  
   for (let prop in obj) {
     let repeatCount = obj[prop];
     while (repeatCount > 0) {
